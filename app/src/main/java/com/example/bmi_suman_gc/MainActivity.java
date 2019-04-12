@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         WeightModel wm = new WeightModel(weight, height);
         float result = wm.getWeight() / (wm.getHeight() * wm.getHeight());
         txtResult.setText("" + result);
+        
         if (result < 18.5) {
             Toast.makeText(MainActivity.this, "You are Underweight", Toast.LENGTH_LONG).show();
         } else if (result >= 18.5 && result <= 24.9) {
